@@ -17,7 +17,7 @@
      font-weight: 400;
      line-height: 1.5;
      color: #6C6A74;
-     text-align: left;
+     text-align: justify;
      background-color: #fff;
 }
  hr {
@@ -520,6 +520,7 @@
     
 }
 
+/* Animation */
 #logo h1{
     animation-name: logo;
     animation-duration: 4s;

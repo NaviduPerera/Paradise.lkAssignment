@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 html {
-    font-family: sans-serif;
+    font-family:'Times New Roman', Times, serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -12,12 +12,12 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 body {
     margin: 0;
-    font-family: "Poppins", sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 1.5;
     color: #6C6A74;
-    text-align: left;
+    text-align: justify;
     background-color: #fff;
 }
 hr {
@@ -34,12 +34,12 @@ p {
     margin-bottom: 1rem;
 }
 a {
-    color: #FF6600;
+    color: green;
     text-decoration: none;
     background-color: transparent;
 }
 a:hover {
-    color: #b34700;
+    color: green;
     text-decoration: underline;
 }
 figure {
@@ -176,7 +176,7 @@ mark, .mark {
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .btn:hover {
-    color: #6C6A74;
+    color: greenyellow;
     text-decoration: none;
 }
 .btn.disabled, .btn:disabled {
@@ -184,24 +184,24 @@ mark, .mark {
 }
 .btn-primary {
     color: #fff;
-    background-color: #FF6600;
-    border-color: #FF6600;
+    background-color: greenyellow;
+    border-color: greenyellow;
 }
 .btn-primary:hover {
     color: #fff;
-    background-color: #d95700;
-    border-color: #cc5200;
+    background-color: greenyellow;
+    border-color: greenyellow;
 }
 .btn-primary:focus, .btn-primary.focus {
     color: #fff;
-    background-color: #d95700;
-    border-color: #cc5200;
-    box-shadow: 0 0 0 0.2rem rgba(255, 125, 38, 0.5);
+    background-color: greenyellow;
+    border-color: greenyellow;
+    box-shadow: 0 0 0 0.2rem rgba(71, 209, 16, 0.062);
 }
 .btn-primary.disabled, .btn-primary:disabled {
     color: #fff;
-    background-color: #FF6600;
-    border-color: #FF6600;
+    background-color: greenyellow;
+    border-color: greenyellow;
 }
 .navbar {
     position: relative;
@@ -417,6 +417,7 @@ a.bg-light:hover, a.bg-light:focus, button.bg-light:hover, button.bg-light:focus
     position: relative !important;
 }
 
+/* Animation */
 #logo h1{
     animation-name: logo;
     animation-duration: 4s;
@@ -579,11 +580,11 @@ a.bg-light:hover, a.bg-light:focus, button.bg-light:hover, button.bg-light:focus
 }
 
 
-.dropdown-content a:hover {background-color:#E4EAEE;color: #FF6600;}
+.dropdown-content a:hover {background-color:#E4EAEE;color: greenyellow;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #aaa;color: #FF6600;}
+.dropdown:hover .dropbtn {background-color: #aaa;color: greenyellow;}
 
 /* max-width: 1200px */
 @media (max-width: 1200px) {
@@ -802,13 +803,13 @@ a.bg-light:hover, a.bg-light:focus, button.bg-light:hover, button.bg-light:focus
     text-transform: uppercase !important;
 }
 .text-white {
-    color: #fff !important;
+    color: greenyellow !important;
 }
 .text-primary {
-    color: #FF6600 !important;
+    color: greenyellow !important;
 }
 a.text-primary:hover, a.text-primary:focus {
-    color: #b34700 !important;
+    color: greenyellow !important;
 }
 .text-decoration-none {
     text-decoration: none !important;
@@ -841,7 +842,7 @@ h5, h6, .font-weight-medium {
     outline: none;
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.active {
-    color: #FF6600;
+    color: greenyellow;
     background-color:#E4EAEE;
 }
 .navbar-vertical.navbar-light .navbar-nav .nav-link {
@@ -854,7 +855,7 @@ h5, h6, .font-weight-medium {
     right: 0;
     bottom: 0;
     text-align: left;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(117, 25, 25, 0.2);
     z-index: 1;
 }
 .page-header {
