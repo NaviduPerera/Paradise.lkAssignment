@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donation page</title>
+
+
+       <!-- Favicon -->
+       <link href="img/favicon.ico" rel="icon">
+       
+       <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/Donation.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+
+  </head>
+
+
+  <body>
+
+    <form id="resultsForm">
+      
+      <fieldset>
+        
+        <p>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+        </p>
+        
+        <p>
+          <label for="Address">Address:</label>
+          <input type="text" id="Address" name="Address" placeholder="Enter your Address" required>
+        </p>
+        
+        <p>
+          <label for="Name_on_card">Name on card:</label>
+          <input type="text" id="Name_on_card" name="Name_on_card" placeholder="Cardholders Name" required> 
+        </p>
+        
+        <p>
+          <label for="Card_Number">Card Number:</label>
+          <input type="number" id="Card_Number" name="Card_Number" placeholder="xxxx-xxxx-xxxx-xxxx" required>
+        </p>
+        
+        <div class="selection">
+          <div class="date">
+            <p> 
+              <label for="CVV">CVV:</label>
+              <select name="months" id="months">
+                      <option value="Jan">Jan</option>
+                      <option value="Feb">Feb</option>
+                      <option value="Mar">Mar</option>
+                      <option value="Apr">Apr</option>
+                      <option value="May">May</option>
+                      <option value="Jun">Jun</option>
+                      <option value="Jul">Jul</option>
+                      <option value="Aug">Aug</option>
+                      <option value="Sep">Sep</option>
+                      <option value="Oct">Oct</option>
+                      <option value="Nov">Nov</option>
+                      <option value="Dec">Dec</option>
+                    </select>
+                    <select name="years" id="years">
+                      <option value="2020">2020</option>
+                      <option value="2019">2019</option>
+                      <option value="2018">2018</option>
+                      <option value="2017">2017</option>
+                      <option value="2016">2016</option>
+                      <option value="2015">2015</option>
+                    </select>
+                  </p>
+                </div>
+                <p>
+                  <label for="Security_Code">Security Code:</label>
+                  <input type="number" id="Security_Code" name="Security_Code" placeholder="Enter the Security Code" required>
+                </p>
+                
+                <div class="Donation-container">
+                  <label>Donation Amount:</label>
+                  <select id="Donation">
+                    <option value="100">100LKR</option>
+                    <option value="250">250LKR</option>
+                    <option value="500">500LKR</option>
+                    <option value="1000">1000LKR</option>
+                    <option value="2500">2500LKR</option>
+                    <option value="5000">5000LKR</option>
+                    <option value="10000">10000LKR</option>
+                  </select>
+                
+        <p>
+            <button type="submit" id="Proceed_to_pay" name="Proceed_to_pay" >Proceed to pay</button> 
+        </p>
+        
+      </form>
+    </div>
+  </fieldset> 
+
+  <div class="popup" id="popup">
+    <img src="img/tick.webp">
+    <h2>Thank You!</h2>
+    <p id="message-display"> </p>
+    <button type="button" id="ok-btn">OK</button>
+  </div>
+    
+      
+      <script src="main.js/1st.js"></script>
+    </body>
+    </html>
