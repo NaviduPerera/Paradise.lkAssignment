@@ -7,27 +7,24 @@ var totalQuantity;
 var finalquant;
 var loyaltypoints
 
-console.log()
 
 let TicketBooking=document.getElementById("Ticket Booking")
 let ticketType=document.getElementById("TType2")
 let addtoorder=document.getElementById("add")
 let Numberoftickets=document.getElementById("numT")
-var duration2=document.getElementById("Duration2");
-var duration3=document.getElementById("Duration3");
-var duration4=document.getElementById("Duration4");
-
+let duration1=document.getElementById("Duration1");
+let duration2=document.getElementById("Duration2");
+let duration3=document.getElementById("Duration3");
+let duration4=document.getElementById("Duration4");
 let Currentcost=document.getElementById("current-cost")
-
 let numberoffoodt=document.getElementById("numFT")
-var duration1=document.getElementById("Duration1");
-//var duration=document.getElementsById("Duration");
 let durationn=document.getElementById("Durationd")
 let radioButtons= document.querySelectorAll('input[type="radio"]')
-
 let btnpurchase=document.getElementsByClassName("btn-purchase")[0]
-let Tickettypecost;
 
+
+
+let Tickettypecost;
 let Tickettype=ticketType.options[ticketType.selectedIndex].value;
 let select1=ticketType.options[ticketType.selectedIndex].text;
 let Numberoffoodt=numberoffoodt.value;
@@ -40,7 +37,6 @@ window.addEventListener("load", init);
 function init() {
      
     ttype = 0; 
-   // nof = 0; 
     dutype = 0; 
     noft = 0; 
     
@@ -71,7 +67,7 @@ function fticketType(){
     else if(select1==15000){
         ttype=15000;
     }
-    console.log(ttype)
+
     cost = ttype*nof + (dutype*nof)+noft;
 
     Currentcost.innerText = `${cost.toFixed(2)}`; 
@@ -92,7 +88,6 @@ function numberoftickets(){
     nof=Numberoftickets.value;
     cost = ttype*nof + (dutype*nof)+noft;
     Currentcost.innerText = `${cost.toFixed(2)}`;
-    console.log(nof)
 
 
 }
@@ -138,33 +133,6 @@ function fduration(){
 
 
 
-/*
-Duration.forEach(item => item.addEventListener("change", fduration));
-function fduration(){
-    if(duration1.checked==true){
-        if(ttype==1000 || ttype==500 || ttype==5000 || ttype==2500){
-            dutype=0;  
-        }       
-}
-    else if(duration2.checked==true){
-        if(ttype==1000 || ttype==500 ) {
-            dutype=250;  
-        }  
-        if(ttype==5000 || ttype==2500 ) {
-            dutype=500;  
-        }            
-    }
-    else if(duration3.checked==true){
-        if(ttype==1000 || ttype==500 ) {
-            dutype=500;  
-        }  
-        if(ttype==5000 || ttype==2500 ) {
-            dutype=1000;  
-        }            
-    }
-    cost = ttype*nof + (dutype*nof)+noft;
-    Currentcost.innerText = `${cost.toFixed(2)}`;
-    }*/
 
 numberoffoodt.addEventListener("change",fnumberoftickets)
 function fnumberoftickets(){
@@ -176,7 +144,6 @@ function fnumberoftickets(){
     noft=Numberoffoodt*500;
     cost = ttype*nof + (dutype*nof)+noft;
     Currentcost.innerText = `${cost.toFixed(2)}`;}
-    console.log(noft)
 }
 
 
@@ -189,7 +156,7 @@ function addorder(){
     let Numberoffoodt=numberoffoodt.value;
     if(Tickettype!="n" && nof!=0 ){
         
-//let cost=(Tickettype*numberoftickets)+Numberoffoodt
+
 
 cost = ttype*nof + (dutype*nof)+noft;
 let select2=ticketType.options[ticketType.selectedIndex].text
@@ -228,17 +195,10 @@ Currentcost.innerText = `${cost.toFixed(2)}`;
 document.getElementById("TType2").value = "n";
 document.getElementById("Durationd").value = "1n";
 document.getElementById("numT").value = 0;
-/*Currentcost.innerHTML = "0.00";*/
+
 
 document.getElementById("numFT").value = 0;
-/*Numberoffoodt=0;*/
 
-/*document.getElementsById("Duration").input[type="radio"]=first;
-Duration.input[type="radio"]
-radioButtons.*/
-//radioButtons.forEach(radioButtons=>radioButtons.checked=100) 
-//radioButtons=document.getElementById("duration1")
-//duration1.checked=true;
     }
     else{
         alert('slect item')
@@ -263,19 +223,17 @@ function updateCartTotal(){
         var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
        var quantityElement1= parseInt(quantityElement.textContent)
         
-        //console.log("pul is"+quantityElement1)
+        
         var price = parseFloat(priceElement.innerText.replace('Rs.', ''))
-        //console.log(price)
+        
 
         total = total + price  
-       // console.log(total)
         totalQuantity=totalQuantity+quantityElement1
      
 
     }
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = 'Rs. ' + total
-    console.log("huk is "+totalQuantity)
     finalquant=totalQuantity
 
     
@@ -283,7 +241,7 @@ function updateCartTotal(){
    }
 
    function removeCartItem(buttonClicked) {
-    // var buttonClicked = event.target
+    
     
      buttonClicked.parentElement.parentElement.remove()
      remUpdatecart()
@@ -301,10 +259,8 @@ function updateCartTotal(){
         
         
         var price = parseFloat(priceElement.innerText.replace('Rs.', ''))
-        console.log(price)
 
         total = total +price 
-        console.log(total)
 
 
         var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
@@ -314,7 +270,6 @@ function updateCartTotal(){
     }
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = 'Rs. ' + total
-    console.log("huk is "+totalQuantity)
     finalquant=totalQuantity
 }
 
@@ -330,13 +285,11 @@ function placeOrder(){
 Addfav.addEventListener("click",Addfavb)
 function Addfavb(){
    
-    console.log("huk")
     let select1=ticketType.options[ticketType.selectedIndex].text;
     newselect1=select1
     newcost1=cost
     newnof=parseInt(nof)
     newdutype=dutype*newnof
-    console.log(select1)
     let Addfav1={itemname:newselect1,Fcost:newcost1,quantity:newnof,duration:newdutype}
     localStorage.setItem('fav',JSON.stringify(Addfav1));
 
@@ -352,7 +305,6 @@ function Addfavb(){
 }
 LoadFav.addEventListener("click",loadFav)
 function loadFav(){
-console.log("pak")
 let retufav = JSON.parse(localStorage.getItem('fav'))
 
 newselect1=retufav.itemname
@@ -391,31 +343,24 @@ cartRow.innerHTML = cartRowContents
 
 
 
-console.log(retufav)
-//localStorage.clear();
+
 }
 }
 
 CheckLoyalty.addEventListener("click",countnumberoftickets)
 function countnumberoftickets(){
     
-    console.log(finalquant)
+
     if(finalquant>3){
         loyaltypoints=20*finalquant;
        alert(`you earned ${loyaltypoints} of loyalty points`)
-        console.log(loyaltypoints)
         let loyaltyp={Loyaltypoint:loyaltypoints}
         localStorage.setItem('loyal',JSON.stringify(loyaltyp))
     }
     else{
         alert('buy more than 3 items')
     }
-  //  deleteloyal()
-}/*
-function deleteloyal(){
-    let retloyal = JSON.parse(localStorage.getItem('loyal'))
-    alert(`your point ${retloyal}`)
-    console.log(retloyal)
-}*/
+}
+
 
 
