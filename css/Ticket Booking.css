@@ -1,42 +1,62 @@
 
-
-
-#TType2{
+#Type-of-the-ticket{
     width: 200px;
 }
 
 
-#numT {
+#Ticket-Count {
     width: 200px;
 }
 
 
-#numFT {
+#Count-of-number-of-food-token  {
     width: 200px;
 }
 
-#add {
-    width: 200px;
-    height: 20px;
-    background-color: rgb(255, 254, 254);
-    font-family: "Metal Mania";
-    font-weight: normal;
-    color: rgb(18, 19, 19);
-    text-align: center;
-    font-size: 1em;
-    font-weight: bold;
-    
-    
+.add{
+    padding: 10px;
+    background-color: rgb(106, 215, 179);
 }
+
+.add:hover{
+    color: rgb(45, 213, 168);
+    background-color: white;
+}
+
+.Tickettype{
+    border-radius: 10px;
+    padding: 5PX;
+    background-color: rgb(106, 215, 179);
+}
+
+.inputfields{
+    border-radius: 10px;
+    padding: 5PX;
+    background-color: rgb(106, 215, 179);
+}
+
+.currentcoststyle{
+    color: white;
+}
+
 
 
 table, th, td {
-    border:1px solid rgb(0, 0, 0);
-    width: 750px;
-    height: 40px;
+    border: 4px solid rgb(246, 244, 244);
+    border-collapse: collapse;
+    width: 50%;
+    height: 50px;
 }
 
+.addbtn{
+    padding: 20px;
+    background-color: rgb(106, 215, 179);
+}
 
+label{
+    color: white;
+    padding-right: 10px;
+}
 
 
 
@@ -50,14 +70,13 @@ table, th, td {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 1.5em;
-    
 }
 .OrderH {
     font-family: "Metal Mania";
     font-weight: normal;
     color: rgb(255, 254, 254);
     text-align: center;
-    font-size: 0.5em;
+    font-size: 40px;
 }
 .btn {
     text-align: center;
@@ -66,15 +85,16 @@ table, th, td {
     cursor: pointer;
 }
 .btn-primary {
-    color: rgb(24, 26, 26);
-    background-color: #eedddd;
+    padding: 20px;
+    background-color: rgb(106, 215, 179);
     border: black;
     font-weight: bold;
     
 }
 
 .btn-primary:hover {
-    background-color: rgb(118, 119, 122);
+    color: rgb(45, 213, 168);
+    background-color: white;
 }
 .btn-purchase {
     display: block;
@@ -103,7 +123,7 @@ table, th, td {
 .cart-header {
     font-weight: bold;
     font-size: 1.25em;
-    color: rgb(255, 254, 254);
+    color: rgb(245, 238, 238);
     font-weight: bold;
 
 
@@ -113,7 +133,7 @@ table, th, td {
 .cart-column {
     display: flex;
     align-items: center;
-    border-bottom: 1px rgb(255, 254, 254);
+    border-bottom: 1px rgb(249, 246, 246);
     margin-right: 1.5em;
     padding-bottom: 10px;
     margin-top: 10px;
@@ -130,7 +150,7 @@ table, th, td {
 .cart-price {
     width: 20%;
     font-size: 1em;
-    color: rgb(255, 254, 254);
+    color: rgb(250, 248, 248);
 }
 
 .cart-quantity {
@@ -138,7 +158,7 @@ table, th, td {
 }
 
 .cart-item-title {
-    color: rgb(255, 254, 254);
+    color: rgb(253, 249, 249);
     margin-left: .5em;
     font-size: 1.0em;
 }
@@ -147,8 +167,8 @@ table, th, td {
     width: 35px;
     border-radius: 5px;
     border: 1px solid #56CCF2;
-    background-color: #eee;
-    color: rgb(43, 41, 41);
+    background-color: rgb(243, 237, 237);
+    color: black;
     padding: 0;
     text-align: center;
     font-size: 1.2em;
@@ -156,7 +176,7 @@ table, th, td {
 }
 
 .cart-row:last-child {
-    border-bottom: 1px rgb(46, 43, 43);
+    border-bottom: 1px rgb(255, 254, 254);
 }
 
 .cart-row:last-child .cart-column {
@@ -173,17 +193,17 @@ table, th, td {
 .cart-total-title {
     font-weight: bold;
     font-size: 1.5em;
-    color: rgb(255, 254, 254);
+    color: rgb(247, 243, 243);
     margin-right: 20px;
 }
 
 .cart-total-price {
-    color: rgb(255, 254, 254);
+    color: rgb(249, 245, 245);
     font-size: 1.1em;
 }
 
 .btn-danger {
-    color: white;
+    color: rgb(241, 233, 233);
     background-color:red;
     border: none;
     border-radius: .3em;
@@ -191,6 +211,52 @@ table, th, td {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Cookie|Raleway:300,700,400);
+*{
+	box-sizing: border-box;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: url("../img/Acticitiespagesem2\(2\).webp") center no-repeat;
+	background-size: cover;
+	color: #333;
+	font-size: 18px;
+	font-family: 'Raleway', sans-serif;
+}
+
+h1{
+	font-size: 3em;
+	margin: 0 0 0.5em 0;
+	text-align: center;
+	font-family: 'Cookie', cursive;
+}
+img{
+	height: auto;
+	margin: 0 auto;
+	max-width: 240px;
+	width: 100%;
+}
+
+.text-center{
+	text-align: center;
+}  
 
 
 

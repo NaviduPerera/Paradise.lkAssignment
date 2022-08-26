@@ -17,10 +17,13 @@
    
 </head>
 <body>
+    
+    <fieldset>
         <form id="Ticket_Booking">
+            
         <p>
             <label for="TType">Ticket Type</label>
-            <select id="TType2" name="TType" >
+            <select class="Tickettype" id="TType2" name="TType" >
                 <option value="n">Choose Ticket Type</option>
                 <option value=5000>Foreign Adult Pass</option>
                 <option value=2500>Foreign Child Pass</option> 
@@ -31,15 +34,16 @@
                 
             </select> 
         </p>
-
+        <br>
         <p>
             <label for="numT">Number of tickets: </label>
-            <input type="number" name="numT" id="numT" min="1" value="0"> 
+            <input class="inputfields" type="number" name="numT" id="numT" min="1" value="0"> 
         </p>
+        <br>
     <div id="Duration">
         <p>
-            <label for="Duration">Durtion: </label>
-            <select id="Durationd" name="Duration" >
+            <label for="Duration">Duration: </label>
+            <select class="Tickettype" id="Durationd" name="Duration" >
               <!--  <option value="1n">Choose The Duration</option>-->
                 <option value="3 Hours">3 Hours</option>
                 <option value="1/2 Day">1/2 Day</option> 
@@ -48,27 +52,29 @@
              </select> 
         
         </p>
+        <br>
     </div>
         <p>
             <label for="numFT">Number of Food Tockens: </label>
-            <input type="number" name="numFT" id="numFT" min="0" value="0" > 
+            <input class="inputfields"  type="number" name="numFT" id="numFT" min="0" value="0" > 
         </p>
 
-
+        <br>
 
         <table>
             <tr>
-                <th>Current-cost</th>
+                <th class="currentcoststyle">Current-cost</th>
             </tr>
             <tr>
-                <th id="current-cost">0.00</th> 
+                <th class="currentcoststyle" id="current-cost">0.00</th> 
             </tr>
         </table>
             
             
         
-
-        <p><button type="submit" id="add">Add to order</button></p>
+        <br>
+        <p><button class="add" type="submit" id="add">Add to order</button></p>
+        <br>
         <button class="btn btn-primary btn-addFav" type="button" id="addfav" >ADD TO FAVOURITE</button>
         <button class="btn btn-primary btn-orderFav" type="button" id="loadFav" >ORDER FAVOURITE</button>
 
@@ -96,6 +102,7 @@
  
 
 </form>
+</fieldset>
 
 
              
